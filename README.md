@@ -1,5 +1,9 @@
 # cs230-simon-app
 
+This code was made in Visual Studio Code.
+To run this game, download the <> html file
+extract the folder and run the <> html file on your browser
+
 https://www.youtube.com/watch?v=n_ec3eowFLQ
 This helpful person thought me lots of basic javaScript in his tutorial.
 Along with him, i link other helpful sites and youtubers that helped me.
