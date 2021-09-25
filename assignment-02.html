@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LayOut</title>
+        <!--
+            all references are in js
+
+            // the browser i used for testing is Microsoft egde, but it works on chrome too
+            // i used windows computer
+            // microsoft edge version: Version 88.0.705.81 (Official build) (64-bit)
+            // chrome version: Version 88.0.4324.190 (Official Build) (64-bit)
+        -->
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+        <style>
+          /* css here */
+          
+          #game  /* the white box the console is in*/
+          {
+                background-color: white;
+                position: absolute;
+                /* centers window */
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                
+                height: 300px;
+                width: 300px;
+                border: 3px solid black;
+          }
+
+          .circleButton /* the border of the 4 clicking button*/
+          {
+                height: 90px;
+                width: 90px;
+                border-radius: 50%;
+                border: 5px solid black;
+                cursor: pointer;
+          }
+
+
+          #dark /* the circle of the game pad that is black */
+          {
+                position: absolute;
+
+                /* centers window */
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+                border: 7px solid black;
+                background-color: rgb(37, 37, 37);
+
+                text-align: center;
+          }
+
+          #grass /* green button */
+          {
+                position: absolute;
+                top: 35px;
+                left: 20px;
+                background-color: green;
+          }
+
+          #electric /* yellow button */
+          {
+                position: absolute;
+                top: 165px;
+                left: 20px;
+                background-color: goldenrod;
+          }
+          #fire /* red button */
+          {
+                position: absolute;
+                top: 35px;
+                left: 180px;
+                background-color: rgb(126, 30, 30);
+          }
+          #water /* blue button */
+          {
+                position: absolute;
+                top: 165px;
+                left: 180px;
+                background-color: darkblue;
+          }
+
+          /* positioning the box holding 'turn' number, 'start' button, 'score' number
+             and small 'light' */
+          .button_group 
+          {
+                position: absolute;
+                top: 65px;
+                left: 10px;
+          }
+
+          /* position of start button in the button_group */
+          #start
+          {
+                position: absolute;
+                top: 0px;
+                left: 37px;
+                
+          }
+
+          /* position of turn count in the button_group */
+          #left
+          {
+                background-color: rgb(233, 231, 231);
+                position: absolute;
+                top: 0px;
+                left: 0px;
+
+                width: 26px;
+                height: 15px;
+                text-align: center;
+          }
+
+          /* position of score count in the button_group */
+          #right
+          {
+                background-color: rgb(233, 231, 231);
+                position: absolute;
+                top: 0px;
+                left: 100px;
+
+                width: 26px;
+                height: 15px;
+
+                text-align: center;
+          }
+
+          /* border of the start button */
+          .buttonBorder
+          {
+              border: 2px solid black;
+              
+          }
+
+          /* position of smol light in the button_group */
+          #light
+          {
+                position: absolute;
+                top: 30px;
+                left: 60px;
+
+                border: 2px solid black;
+                height: 5px;
+                width: 5px;
+                border-radius: 50%;
+                background-color: red;
+          }
+
+          /* black background */
+          body 
+          {
+                background-color: black;
+                font-family: 'Orbitron', sans-serif;
+          }
+
+          /* when the cursor hovers on the button, it 'points' */
+          button
+          {
+              cursor: pointer;
+          }
+          
+          
+        </style>
+
+    </head>
+    <body>
+        <!--html code here-->
+        <div id = "game">
+
+            <div id = "dark"> <!--black console-->
+
+                <div class = "button_group"> <!--box for start, turn, score and light-->
+                    <div id = "left" style = "font-size: 10px; font-family: Orbitron;" class = "buttonBorder">00</div>
+                    <button id = "start" style = "font-size: 10px; font-family: Orbitron;" class = "buttonBorder" >START</button>
+                    <div id = "right" style = "font-size: 10px; font-family: Orbitron;" class = "buttonBorder">00 </div>
+                    <div id = "light"></div>
+                </div>
+                
+            </div>
+            
+            <div id = "grass" class = "circleButton"> <!--green button-->
+                
+            </div>
+            <div id = "fire" class = "circleButton"> <!--red button-->
+                
+            </div>
+            <div id = "electric" class = "circleButton"> <!--yellow button-->
+                
+            </div>
+            <div id = "water" class = "circleButton"> <!--blue button-->
+                
+            </div>
+
+            
+            
+            
+        </div>
+
+    </body>
+    
+          <script src = "assignment-02.js"> // java here </script>
+    <!--<script src = "Un_Bakemono.js"> // java here </script>-->
+</html>
