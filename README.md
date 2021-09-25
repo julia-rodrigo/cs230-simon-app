@@ -2,6 +2,7 @@
 
 https://www.youtube.com/watch?v=n_ec3eowFLQ
 This helpful person thought me lots of basic javaScript in his tutorial.
+Along with him, i link other helpful sites and youtubers that helped me.
 
 First i coded along the full java in the video.
 Then i removed some code to fit the basic description of the given assignment
